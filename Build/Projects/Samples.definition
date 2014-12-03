@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Name="Samples" Path="Samples" Type="App" Platforms="MacOS,Windows">
+  <References>
+    <Reference Include="References"/>
+    <Reference Include="Content"/>
+  </References>
+  <Properties>
+    <NoWarn>1591,649,162</NoWarn>
+    <RootNamespace>MBL</RootNamespace>
+    <RemoveXnaAssembliesOnWP8>true</RemoveXnaAssembliesOnWP8>
+    <PlatformSpecificOutputFolder>True</PlatformSpecificOutputFolder>
+    <CustomDefinitions>
+      <Platform Name="iOS">IOS;GLES;OPENGL;MOBILE;MONOTOUCH</Platform>
+      <Platform Name="MacOS">MONOMAC;OPENGL;DESKTOP</Platform>
+      <Platform Name="WindowsGL">TRACE;WINDOWS;OPENGL;DESKTOP</Platform>
+      <Platform Name="Windows">TRACE;WINDOWS;DIRECTX;WINDOWS_MEDIA_SESSION;DESKTOP</Platform>
+      <Platform Name="WindowsPhone">SILVERLIGHT;WINDOWS_PHONE;DIRECTX;MOBILE</Platform>
+      <Platform Name="Windows8">TRACE;NETFX_CORE;WINRT;WINDOWS_STOREAPP;DIRECTX;DIRECTX11_1;WINDOWS_MEDIA_ENGINE;MOBILE</Platform>
+      <Platform Name="Android">TRACE;ANDROID;GLES;OPENGL;OPENAL;MOBILE</Platform>
+    </CustomDefinitions>
+  </Properties>
+  <Files>
+    <Compile Include="Main.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="World\Camera.cs" />
+    <Compile Include="AnimationBlending\Animator.cs" />
+    <Compile Include="AnimationBlending\Bone.cs" />
+    <Compile Include="AnimationBlending\AnimatedModel.cs" />
+  </Files>
+</Project>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ExternalProject Name="References">
+
+  <Platform Type="iOS">
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="OpenTK" />
+    
+    <Project
+      Name="MonoGame.Framework"
+      Guid="DB8508BB-9849-4CC2-BC0F-8EB5DACB3C47"
+      Path="MonoGame/MonoGame.Framework/MonoGame.Framework.iOS.csproj" />
+	<Project
+      Name="ModelViewerAux.iOS"
+      Guid="2372E6A1-1584-47FC-9C7B-98B27206B489"
+      Path="Libs/ModelViewerAux/ModelViewerAux.iOS.csproj" >
+        <ConfigurationMapping Old="Debug" New="Debug|Any CPU" />
+        <ConfigurationMapping Old="Release" New="Release|Any CPU" />
+        <ConfigurationMapping Old="Ad-Hoc" New="Release|Any CPU" />
+        <ConfigurationMapping Old="AppStore" New="Release|Any CPU" />
+    </Project>
+  </Platform>
+
+  <Platform Type="Android">
+    <Reference Include="System"/>
+    <Reference Include="System.Net.Http"/>
+    <Reference Include="System.Net"/>
+    <Reference Include="Mono.Android" />
+
+    <Project
+      Name="MonoGame.Framework"
+      Guid="BAA9A6E4-7690-4DE0-9531-DE0EAEEC9739"
+      Path="MonoGame/MonoGame.Framework/MonoGame.Framework.Android.csproj" />
+    <Project
+      Name="ModelViewerAux.WindowsPhone"
+      Guid="2372E6A1-1584-47FC-9C7B-98B27206B489"
+      Path="Libs/ModelViewerAux/ModelViewerAux.Android.csproj" />
+  </Platform>
+
+  <Platform Type="WindowsPhone">
+    <Project
+      Name="MonoGame.Framework"
+      Guid="BAA9A6E4-7690-4DE0-9531-DE0EAEEC9739"
+      Path="MonoGame/MonoGame.Framework/MonoGame.Framework.WindowsPhone.csproj" />
+    <Project
+      Name="ModelViewerAux.WindowsPhone"
+      Guid="2372E6A1-1584-47FC-9C7B-98B27206B489"
+      Path="Libs/ModelViewerAux/ModelViewerAux.WindowsPhone.csproj" />
+  </Platform>
+  
+  <Platform Type="Windows8">
+    <Project
+      Name="MonoGame.Framework"
+      Guid="0518563C-ACCA-4A14-8C5D-DDBE93E2605F"
+      Path="MonoGame/MonoGame.Framework/MonoGame.Framework.Windows8.csproj" />
+    <Project
+      Name="ModelViewerAux.Windows8"
+      Guid="2372E6A1-1584-47FC-9C7B-98B27206B489"
+      Path="Libs/ModelViewerAux/ModelViewerAux.Windows8.csproj" />
+  </Platform>
+  
+  <Platform Type="MacOS">
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Project
+      Name="MonoGame.Framework"
+      Guid="36C538E6-C32A-4A8D-A39C-566173D7118E"
+      Path="MonoGame/MonoGame.Framework/MonoGame.Framework.MacOS.csproj" />
+    <Project
+      Name="ModelViewerAux.OSX"
+      Guid="2372E6A1-1584-47FC-9C7B-98B27206B489"
+      Path="Libs/ModelViewerAux/ModelViewerAux.OSX.csproj" />
+  </Platform>
+
+  <Platform Type="WindowsGL">
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Project
+      Name="MonoGame.Framework"
+      Guid="34454F00-65A8-48CE-961D-4F56A81E1FDA"
+      Path="MonoGame/MonoGame.Framework/MonoGame.Framework.WindowsGL.csproj" />
+    <Project
+      Name="ModelViewerAux.WindowsGL"
+      Guid="2372E6A1-1584-47FC-9C7B-98B27206B489"
+      Path="Libs/ModelViewerAux/ModelViewerAux.WindowsGL.csproj" />
+  </Platform>
+
+    <Platform Type="Windows">
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Project
+      Name="MonoGame.Framework"
+      Guid="7DE47032-A904-4C29-BD22-2D235E8D91BA"
+      Path="MonoGame/MonoGame.Framework/MonoGame.Framework.Windows.csproj" />
+    <Project
+      Name="ModelViewerAux.Windows"
+      Guid="2372E6A1-1584-47FC-9C7B-98B27206B489"
+      Path="Libs/ModelViewerAux/ModelViewerAux.Windows.csproj" />
+  </Platform>
+</ExternalProject>
